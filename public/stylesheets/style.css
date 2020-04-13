@@ -16,7 +16,7 @@ header {
 }
 
 footer {
-  /* position: sticky; */
+  position: fixed;
   bottom: 0;
 }
 
@@ -28,5 +28,27 @@ a {
 
 /* CONTENT */
 .runeImgs {
-  width: 100px;
+  /* width: 100px; */
+  margin-left: 2rem;
+  margin-right: 2rem;
+  flex: 1;
+}
+
+.runeImgs:hover {
+  /* width: 120px; */
+  flex: 2;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.runeImgClicked {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  flex: 2;
+}
+
+.runes-container {
+  display: flex;
+  width: 800px;
+  height: 250px;
 }
