@@ -1,3 +1,7 @@
+html {
+  background-color: #5A9367;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -6,11 +10,23 @@ body {
   height: 100vh;
 }
 
+header {
+  padding-right: -15px;
+  padding-left: -15px;
+}
+
 footer {
-  position: sticky;
+  /* position: sticky; */
   bottom: 0;
 }
 
 a {
   color: #00B7FF;
+}
+
+/* MAIN PAGE */
+
+/* CONTENT */
+.runeImgs {
+  width: 100px;
 }
