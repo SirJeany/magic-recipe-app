@@ -32,6 +32,7 @@ a {
   margin-left: 2rem;
   margin-right: 2rem;
   flex: 1;
+  transition: 1s;
 }
 
 .runeImgs:hover {
@@ -42,9 +43,7 @@ a {
 }
 
 .runeImgClicked {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  flex: 2;
+  flex: 2 !important;
 }
 
 .runes-container {
