@@ -4,6 +4,7 @@
 
 let runeImgs = document.querySelectorAll('.runeImgs');
 let rune_select_counter = 0;
+let combineBtn = document.getElementById('combineBtn');
 
 function selectRune() {
     // Check if this rune has been selected:
@@ -15,8 +16,18 @@ function selectRune() {
         this.classList.add('runeImgClicked');
         rune_select_counter++;
     }
+
+    // Button availability check:
+    if(rune_select_counter >= 2){
+        combineBtn.removeAttribute('disabled');
+    } else {
+        combineBtn.setAttribute('disabled', 'true');
+    }
 }
 
 runeImgs.forEach(rune => {
     rune.addEventListener('click', selectRune);
 });
+
+// Combine Button functionality:
+// combineBtn.addEventListener('click')

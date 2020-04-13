@@ -6,12 +6,22 @@
   <p>Please select two runes to start crafting</p>
 </header>
 
-<main class="container d-flex justify-content-center">
+<main class="d-flex flex-column justify-content-center align-items-center align-center">
   <section class="runes-container ">
     <img class="runeImgs" src="/images/BlueRune.svg" alt="Blue Rune">
     <img class="runeImgs" src="/images/RedRune.svg" alt="Red Rune">
     <img class="runeImgs" src="/images/GreenRune.svg" alt="Green Rune">
   </section>
+  <button id="combineBtn" class="btn btn-primary mb-5 mt-4" disabled="true">Combine</button>
+
+  <section class="container combined-section d-flex justify-content-center">
+    
+  </section>
+
+  <footer class="container-fluid mt-5">
+    <!-- Icon tributes: -->
+    Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+</footer> 
 </main>
 
 <%- include('footer') %>

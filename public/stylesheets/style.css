@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  padding: 0;
+  padding: 0 !important;
   margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #e9f2f5 !important;
@@ -15,9 +15,13 @@ header {
   padding-left: -15px;
 }
 
+main {
+  
+}
+
 footer {
-  position: fixed;
-  bottom: 0;
+  /* position: fixed; */
+  /* bottom: 0; */
 }
 
 a {
@@ -40,16 +44,23 @@ a {
   flex: 2;
   transition: 0.8s;
   cursor: pointer;
-  -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
-  filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
 }
 
 .runeImgClicked {
   flex: 3 !important;
+  -webkit-filter: drop-shadow( 10px rgba(235, 182, 70, .7));
+  filter: drop-shadow( 10px rgba(235, 182, 70, 0.7));
 }
 
 .runes-container {
   display: flex;
   width: 800px;
   height: 250px;
+}
+
+/* COMBINED RUNES SECTION */
+
+.combined-section {
+  background-color: #073B6F;
+  height: 100px;
 }
