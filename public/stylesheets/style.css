@@ -32,7 +32,7 @@ a {
 
 /* CONTENT */
 .runeImgs {
-  /* width: 100px; */
+  width: 100px;
   margin-left: 2rem;
   margin-right: 2rem;
   flex: 1;
