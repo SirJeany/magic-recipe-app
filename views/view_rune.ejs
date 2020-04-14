@@ -2,9 +2,11 @@
 
 <main class="container text-center mb-4">
     <h1><%= title %></h1>
-    <h2>New found Rune!</h2>
+    <h2>You found a new Mythical Rune!</h2>
     <!-- Div holder for the new rune: -->
-    <div class="runeHolder"></div>
+    <div class="runeHolder">
+        <img class="runeImgs" src="<%= rune.img %>" alt="<%= rune.name %>">
+    </div>
 
 
     <footer class="container-fluid mt-5">

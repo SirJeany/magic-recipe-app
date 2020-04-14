@@ -12,13 +12,15 @@
       <img class="runeImgs" src="<%= runes.Runes[i].img %>" alt="<%= runes.Runes[i].name %>">
     <% } %>
   </section>
-  <button id="combineBtn" class="btn btn-primary mb-5 mt-4" disabled="true">Combine</button>
+  <form action="/create_rune" method="POST">
+    <button id="combineBtn" class="btn btn-primary mb-5 mt-4" disabled="true">Combine</button>
+  </form>
 
   <section class="container combined-section d-flex flex-column justify-content-center align-items-center">
     <h3 class="text-light">New found runes:</h3>
     <div class="foundRunes">
       <% runes.Found.forEach( rune => { %>
-        <img class="foundRuneImgs" src="<%= rune.img %>" alt="<%= rune.name %>">
+        <a href="/view_rune/<%- rune.id %>"><img class="foundRuneImgs" src="<%= rune.img %>" alt="<%= rune.name %>"></a>
       <% }); %>
     </div>
   </section>

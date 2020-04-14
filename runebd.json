@@ -31,6 +31,26 @@
     ],
 
     "Found": [
-        
+        {
+            "id": 1,
+            "name": "Blue_Rune",
+            "img": "/images/Blue_Rune.svg",
+            "combinesWith": [2,3],
+            "combinesFrom": []
+        },
+        {
+            "id": 2,
+            "name": "Red_Rune",
+            "img": "/images/Red_Rune.svg",
+            "combinesWith": [1,3],
+            "combinesFrom": []
+        },
+        {
+            "id": 3,
+            "name": "Green_Rune",
+            "img": "/images/Green_Rune.svg",
+            "combinesWith": [1,2],
+            "combinesFrom": []
+        }
     ]
 }
