@@ -6,16 +6,21 @@
   <p>Please select two runes to start crafting</p>
 </header>
 
-<main class="d-flex flex-column justify-content-center align-items-center align-center">
+<main class="d-flex flex-column justify-content-center align-items-center">
   <section class="runes-container ">
-    <img class="runeImgs" src="/images/BlueRune.svg" alt="Blue Rune">
-    <img class="runeImgs" src="/images/RedRune.svg" alt="Red Rune">
-    <img class="runeImgs" src="/images/GreenRune.svg" alt="Green Rune">
+    <% for(let i = 0; i <= 2; i++) { %>
+      <img class="runeImgs" src="<%= runes.Runes[i].img %>" alt="<%= runes.Runes[i].name %>">
+    <% } %>
   </section>
   <button id="combineBtn" class="btn btn-primary mb-5 mt-4" disabled="true">Combine</button>
 
-  <section class="container combined-section d-flex justify-content-center">
-    
+  <section class="container combined-section d-flex flex-column justify-content-center align-items-center">
+    <h3 class="text-light">New found runes:</h3>
+    <div class="foundRunes">
+      <% runes.Found.forEach( rune => { %>
+        <img class="foundRuneImgs" src="<%= rune.img %>" alt="<%= rune.name %>">
+      <% }); %>
+    </div>
   </section>
 
   <footer class="container-fluid mt-5">

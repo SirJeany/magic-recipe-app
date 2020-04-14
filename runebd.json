@@ -3,22 +3,34 @@
         {
             "id": 1,
             "name": "Blue_Rune",
-            "img": "/images/Blue_Rune.svg"
+            "img": "/images/Blue_Rune.svg",
+            "combinesWith": [2,3],
+            "combinesFrom": []
         },
         {
             "id": 2,
             "name": "Red_Rune",
-            "img": "/images/Red_Rune.svg"
+            "img": "/images/Red_Rune.svg",
+            "combinesWith": [1,3],
+            "combinesFrom": []
         },
         {
             "id": 3,
             "name": "Green_Rune",
-            "img": "/images/Green_Rune.svg"
+            "img": "/images/Green_Rune.svg",
+            "combinesWith": [1,2],
+            "combinesFrom": []
         },
         {
             "id": 4,
             "name": "Gold_Rune",
-            "img": "/images/Gold_Rune.svg"
+            "img": "/images/Gold_Rune.svg",
+            "combinesWith": [1,2,3],
+            "combinesFrom": [2,3]
         }
-    ] 
+    ],
+
+    "Found": [
+        
+    ]
 }
