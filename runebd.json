@@ -1,0 +1,24 @@
+{
+    "Runes": [
+        {
+            "id": 1,
+            "name": "Blue_Rune",
+            "img": "/images/Blue_Rune.svg"
+        },
+        {
+            "id": 2,
+            "name": "Red_Rune",
+            "img": "/images/Red_Rune.svg"
+        },
+        {
+            "id": 3,
+            "name": "Green_Rune",
+            "img": "/images/Green_Rune.svg"
+        },
+        {
+            "id": 4,
+            "name": "Gold_Rune",
+            "img": "/images/Gold_Rune.svg"
+        }
+    ] 
+}
