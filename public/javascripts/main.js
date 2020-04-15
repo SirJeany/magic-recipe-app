@@ -30,4 +30,7 @@ runeImgs.forEach(rune => {
 });
 
 // Combine Button functionality:
-// combineBtn.addEventListener('click')
+combineBtn.addEventListener('click', (e) => {
+    // find selected runes and then redirect to page that shows the combined rune.
+    console.log()
+});
