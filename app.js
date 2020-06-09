@@ -4,6 +4,11 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+
+// Connect to Mongo db using mongoose:
+// mongoose.connect('mongodb+srv://mflix_guy:s12572@mflix-vx5yh.gcp.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true ,  useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost/runes', { useNewUrlParser: true,  useUnifiedTopology: true });
 
 // Define routes
 var indexRouter = require('./routes/index');
