@@ -9,7 +9,7 @@
 <main class="d-flex flex-column justify-content-center align-items-center">
   <section class="runes-container ">
     <% for(let i = 0; i <= 2; i++) { %>
-      <img class="runeImgs" src="<%= runes.Runes[i].img %>" alt="<%= runes.Runes[i].name %>">
+      <img class="runeImgs" src="<%= runes.Runes[i].img %>" alt="<%= runes.Runes[i].id %>">
     <% } %>
   </section>
   <!-- <form action="/create_rune" method="POST"> -->
@@ -20,20 +20,20 @@
     <h3 class="text-light">New found runes:</h3>
     <div class="foundRunes">
       <% runes.Found.forEach( rune => { %>
-        <a href="/view_rune/<%- rune.id %>"><img class="foundRuneImgs" src="<%= rune.img %>" alt="<%= rune.name %>"></a>
+        <a href="/view_rune/<%= rune.id %>"><img class="foundRuneImgs" src="<%= rune.img %>" alt="<%= rune.name %>"></a>
       <% }); %>
     </div>
   </section>
 
-  <section class="container m-5">
+  <!-- <section class="container m-5">
     <form action="/" method="post">
       <input type="text" value="Number" name="runeNumber">
       <input type="text" value="RuneName" name="runeName">
       <input type="text" value="Image" name="runeImg">
-      <input type="number" value="Combines" name="runeCombines">
+      <input type="number" value="1" name="runeCombines">
       <button class="btn btn-info">Submit</button>
     </form>
-  </section>
+  </section> -->
 
   <footer class="container-fluid mt-5">
     <!-- Icon tributes: -->
